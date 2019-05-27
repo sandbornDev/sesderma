@@ -1,0 +1,50 @@
+html {
+	font-size: 62.5%;	
+	// @media only screen and (min-resolution: 125dpi){
+	//     font-size: 50%;
+	// }
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+::placeholder {
+	color: $dark-text;
+}
+
+::selection {
+	background-color: $blue;
+	color: $white;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+
+body {
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	background-color: $white;
+	input, textarea {
+		outline: none;
+	}
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
